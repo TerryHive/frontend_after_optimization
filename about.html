@@ -21,6 +21,7 @@
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 
   <!-- fonts style -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Poppins:400,700|Roboto:400,700&display=swap" rel="stylesheet" />
 
   <!-- Custom styles for this template -->
@@ -80,7 +81,7 @@
       <div class="row">
         <div class="col-md-6">
           <div class="img-box">
-            <img src="images/about-img.webp" alt="" width="600" height="400" />
+            <img src="images/about-img.webp" alt="" width="600" height="400" loading="lazy" />
           </div>
         </div>
         <div class="col-md-5 col-lg-4">
@@ -112,9 +113,6 @@
 
   <!-- end about section -->
 
-
-
-
   <!-- info section -->
   <section class="info_section layout_padding">
     <div class="container">
@@ -142,7 +140,7 @@
           <div class="info_logo">
             <div>
               <a href="">
-                <img src="images/logo.webp" alt="" width="98" height="74" />
+                <img src="images/logo.webp" alt="Brighton Logo" width="98" height="74" />
                 <span>
                   Brighton
                 </span>
@@ -206,35 +204,6 @@
 
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.js"></script>
-
-  <script>
-    // This example adds a marker to indicate the position of Bondi Beach in Sydney,
-    // Australia.
-    function initMap() {
-      var map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 11,
-        center: {
-          lat: 40.645037,
-          lng: -73.880224
-        }
-      });
-
-      var image = "images/maps-and-flags.webp";
-      var beachMarker = new google.maps.Marker({
-        position: {
-          lat: 40.645037,
-          lng: -73.880224
-        },
-        map: map,
-        icon: image
-      });
-    }
-  </script>
-  <!-- google map js -->
-
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8eaHt9Dh5H57Zh0xVTqxVdBFCvFMqFjQ&callback=initMap">
-  </script>
-  <!-- end google map js -->
 
   <script>
     function openNav() {
